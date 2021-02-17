@@ -36,6 +36,9 @@
 		1D24E76D17FCE8E61B1F0387 /* testCreateSnapshotEscapedNewlineLastLine.1.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8F1FEF91276E0D2BEFD9BC6 /* testCreateSnapshotEscapedNewlineLastLine.1.swift */; };
 		1FF2453D55C601BDC68646D9 /* testUpdateSnapshotWithLongerExtendedDelimiter2.1.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E7085488C51876C1E9B871C /* testUpdateSnapshotWithLongerExtendedDelimiter2.1.swift */; };
 		2336ECD86073FAB4CFC26CC2 /* InlineSnapshotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6D3BC50BC4692DC6D9FAE0F /* InlineSnapshotTests.swift */; };
+		251D8F6725DDB8D800059A0D /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251D8F6625DDB8D800059A0D /* UIImage+Extensions.swift */; };
+		251D8F6825DDB8D800059A0D /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251D8F6625DDB8D800059A0D /* UIImage+Extensions.swift */; };
+		251D8F6925DDB8D800059A0D /* UIImage+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 251D8F6625DDB8D800059A0D /* UIImage+Extensions.swift */; };
 		2706E738D0BF540260D1F776 /* CALayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E01FF29B2959DE5FD093FB /* CALayer.swift */; };
 		27E2E64971E40DB5E6E84BB6 /* NSBezierPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 599AA3651C4CEE464302CFDD /* NSBezierPath.swift */; };
 		28106F59B265148F2CB38B5B /* CaseIterable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B843712AB555B46BA6E4EC2A /* CaseIterable.swift */; };
@@ -273,6 +276,7 @@
 		1EDE232DB652745F05B478F4 /* testCreateSnapshotWithLongerExtendedDelimiter2.1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testCreateSnapshotWithLongerExtendedDelimiter2.1.swift; sourceTree = "<group>"; };
 		1F2750685230CC3BC17BDEAB /* CGPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGPath.swift; sourceTree = "<group>"; };
 		1FB18BB1F44D13D5C5FE09A6 /* testCreateSnapshotWithExtendedDelimiter1.1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testCreateSnapshotWithExtendedDelimiter1.1.swift; sourceTree = "<group>"; };
+		251D8F6625DDB8D800059A0D /* UIImage+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extensions.swift"; sourceTree = "<group>"; };
 		2641BBEB31120E3B7FE5EA51 /* UIBezierPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBezierPath.swift; sourceTree = "<group>"; };
 		2A69D6A4D06EB76C77493EB7 /* testCreateSnapshotWithExtendedDelimiter2.1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testCreateSnapshotWithExtendedDelimiter2.1.swift; sourceTree = "<group>"; };
 		32BC721A155DB7D81BE69683 /* testUpdateSeveralSnapshotsWithLessLines.1.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testUpdateSeveralSnapshotsWithLessLines.1.swift; sourceTree = "<group>"; };
@@ -492,6 +496,7 @@
 				F479E2BD835B9641B85EB51E /* Internal.swift */,
 				D3B960E2B6E4AAE0BA50F27B /* PlistEncoder.swift */,
 				D49092873A7A5D6DA623E352 /* String+SpecialCharacters.swift */,
+				251D8F6625DDB8D800059A0D /* UIImage+Extensions.swift */,
 				0F6B5B3AB021FA3CD7519733 /* View.swift */,
 				4BE8DE5E8A102E1012CD0C95 /* XCTAttachment.swift */,
 			);
@@ -646,8 +651,6 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 1020;
-				TargetAttributes = {
-				};
 			};
 			buildConfigurationList = D9A4BF45876C849A308801A2 /* Build configuration list for PBXProject "SnapshotTesting" */;
 			compatibilityVersion = "Xcode 10.0";
@@ -733,6 +736,7 @@
 				1ABB68DCE39CE794B07296A7 /* UIViewController.swift in Sources */,
 				30413A9E862B77B868A57B65 /* URLRequest.swift in Sources */,
 				E66A02C861A316EDB4377C2E /* View.swift in Sources */,
+				251D8F6825DDB8D800059A0D /* UIImage+Extensions.swift in Sources */,
 				F4CB3EC3E5D30B217B4D9699 /* Wait.swift in Sources */,
 				4521C5D2FE3CE1784C44A210 /* XCTAttachment.swift in Sources */,
 			);
@@ -773,6 +777,7 @@
 				65ED4CF70D09F51DAD4C692A /* UIViewController.swift in Sources */,
 				7B9F0DFC589C66887A37F0FB /* URLRequest.swift in Sources */,
 				9727BFCBEE9C51BEFB754140 /* View.swift in Sources */,
+				251D8F6725DDB8D800059A0D /* UIImage+Extensions.swift in Sources */,
 				3919A4BA4A0D247767997FB6 /* Wait.swift in Sources */,
 				3079CF3C05E4FCE8F29053AC /* XCTAttachment.swift in Sources */,
 			);
@@ -885,6 +890,7 @@
 				969985906E267A3F203613F1 /* UIViewController.swift in Sources */,
 				573488A1374FE9CD280A0BEE /* URLRequest.swift in Sources */,
 				393181237190376E8A9D300E /* View.swift in Sources */,
+				251D8F6925DDB8D800059A0D /* UIImage+Extensions.swift in Sources */,
 				A134AF655C2842F3EAD76075 /* Wait.swift in Sources */,
 				9F78554F1D755960356B9422 /* XCTAttachment.swift in Sources */,
 			);
@@ -1016,7 +1022,10 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = "$(inherited) $(PLATFORM_DIR)/Developer/Library/Frameworks";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
 				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1063,7 +1072,10 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = "$(inherited) $(PLATFORM_DIR)/Developer/Library/Frameworks";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
 				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1143,7 +1155,10 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = "$(inherited) $(PLATFORM_DIR)/Developer/Library/Frameworks";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
 				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1171,7 +1186,10 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = "$(inherited) $(PLATFORM_DIR)/Developer/Library/Frameworks";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
 				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1199,7 +1217,10 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = "$(inherited) $(PLATFORM_DIR)/Developer/Library/Frameworks";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
 				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1307,7 +1328,10 @@
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = "$(inherited) $(PLATFORM_DIR)/Developer/Library/Frameworks";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PLATFORM_DIR)/Developer/Library/Frameworks",
+				);
 				INFOPLIST_FILE = Sources/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (

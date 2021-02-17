@@ -169,7 +169,8 @@ public func verifySnapshot<Value, Format>(
   timeout: TimeInterval = 5,
   file: StaticString = #file,
   testName: String = #function,
-  line: UInt = #line
+  line: UInt = #line,
+  createDiffImage: Bool = false
   )
   -> String? {
 
@@ -273,6 +274,11 @@ public func verifySnapshot<Value, Format>(
       try fileManager.createDirectory(at: artifactsSubUrl, withIntermediateDirectories: true)
       let failedSnapshotFileUrl = artifactsSubUrl.appendingPathComponent(snapshotFileUrl.lastPathComponent)
       try snapshotting.diffing.toData(diffable).write(to: failedSnapshotFileUrl)
+
+      if createDiffImage, let diffedImage = (diffable as? UIImage)?.diff(with: reference as? UIImage) {
+        let diffFileUrl = failedSnapshotFileUrl.appendingPathExtension("diff.png")
+        try diffedImage.pngData()?.write(to: diffFileUrl)
+      }
 
       if !attachments.isEmpty {
         #if !os(Linux)
